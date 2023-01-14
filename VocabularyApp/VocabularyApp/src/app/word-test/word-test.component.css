@@ -1,0 +1,13 @@
+mat-form-field {
+    display: block;
+    margin: 10px 0;
+  }
+
+.new-word {
+    margin: 5px 50% 5px 10px;
+}
+
+.radioButton {
+  margin-top: 10px;
+  display: block;
+}

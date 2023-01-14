@@ -1,0 +1,2 @@
+C:\Users\acer\Desktop\Stuff\Developing projects\VocabularyApp\VocabularyApp\obj\Debug\VocabularyApp.esproj.SuggestedBindingRedirects.cache
+C:\Users\acer\Desktop\Stuff\Developing projects\VocabularyApp\VocabularyApp\obj\Debug\VocabularyApp.esproj.CoreCompileInputs.cache

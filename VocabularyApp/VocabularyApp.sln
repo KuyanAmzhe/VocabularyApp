@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "VocabularyApp", "VocabularyApp\VocabularyApp.esproj", "{9CF1E8E7-ABC0-4729-B4D5-D9A91F8B337B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VocabularyAPI", "VocabularyAPI\VocabularyAPI.csproj", "{BC76B68E-73B4-4C27-822F-5D2CA5C9A579}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9CF1E8E7-ABC0-4729-B4D5-D9A91F8B337B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CF1E8E7-ABC0-4729-B4D5-D9A91F8B337B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CF1E8E7-ABC0-4729-B4D5-D9A91F8B337B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9CF1E8E7-ABC0-4729-B4D5-D9A91F8B337B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CF1E8E7-ABC0-4729-B4D5-D9A91F8B337B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CF1E8E7-ABC0-4729-B4D5-D9A91F8B337B}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BC76B68E-73B4-4C27-822F-5D2CA5C9A579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC76B68E-73B4-4C27-822F-5D2CA5C9A579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC76B68E-73B4-4C27-822F-5D2CA5C9A579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC76B68E-73B4-4C27-822F-5D2CA5C9A579}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {48306421-B0D1-4951-880D-866CFE142CCA}
+	EndGlobalSection
+EndGlobal

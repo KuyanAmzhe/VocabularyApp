@@ -1,0 +1,95 @@
+#head {
+    background-image: url("../../assets/library.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.container {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.container:nth-child(odd) {
+    background-color: #fff;
+}
+
+.container:nth-child(even) {
+    background-color: inherit;
+}
+
+.main-container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-container h1 {
+    font-size: 45px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.main-container p {
+    font-size: 25px;
+}
+
+.functions {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.functions .function {
+    font-size: 16px;
+    display: inline-block;
+    width: 23%;
+    height: 180px;
+    background-color: #fff;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    vertical-align: top;
+    border-radius: 30px;
+}
+
+/* 
+.functions .function {
+    font-size: 16px;
+    display: inline-block;
+    width: 25%;
+    background-color: inherit;
+    padding-left: 25px;
+    padding-right: 25px;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+*/
+
+.plain-text {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+h2 {
+    padding-top: 20px;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+}
+
+#sub-header {
+    padding-bottom: 15px;
+}
+
+#skills {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: normal;
+}

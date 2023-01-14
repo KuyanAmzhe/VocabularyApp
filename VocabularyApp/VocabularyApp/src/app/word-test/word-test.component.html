@@ -1,0 +1,67 @@
+<div *ngIf="!hideSettings" class="new-word">
+    <h1>New test's settings</h1>
+    <form [formGroup]="form" (ngSubmit)="onSumbit()">
+        <!-- Tested Person Field -->
+        <mat-form-field>
+            <mat-label>Your name</mat-label>
+            <input matInput formControlName="testedPersonName"
+                   placeholder="Enter your name"/>
+            <mat-error *ngIf="this.form.controls['testedPersonName'].errors?.['required']">
+                You should enter your name
+            </mat-error>
+        </mat-form-field>
+        <!-- Test Type Field -->
+        <mat-form-field>
+            <mat-label>Test type</mat-label>
+            <mat-select formControlName="testType">
+                <mat-option *ngFor="let type of testTypes" [value]="type">
+                    {{TestTypesToLabelMapping[type]}}
+                </mat-option>
+            </mat-select> 
+            <mat-error *ngIf="this.form.controls['testType'].errors?.['required']">
+                Choose test type
+            </mat-error>
+        </mat-form-field>
+        <!-- Total Questions Number Field -->
+        <mat-form-field>
+            <mat-label>Total questions number in test</mat-label>
+            <mat-select formControlName="totalQuestionsNumber">
+                   <mat-option *ngFor="let size of testSizes" [value]="size">
+                        {{size}}
+                   </mat-option>
+            </mat-select>
+            <mat-error *ngIf="this.form.controls['totalQuestionsNumber'].errors?.['required']">
+                Enter the number
+            </mat-error>
+        </mat-form-field>
+        <!-- Submit button -->
+        <button mat-flat-button color="primary" type="submit"
+                [disabled]="this.form.invalid">
+            Begin new test
+        </button>
+    </form>
+</div>
+
+<div id="test" *ngIf="hideSettings">
+    <h2>Question {{this.currentQuestionId}} of {{this.testSettings.totalQuestionsNumber}}</h2>
+    <h1>{{(this.testSettings.testType == 0) ? this.engQuestion : this.rusQuestion}}</h1>
+    <mat-radio-group [(ngModel)]="givenAnswer">
+        <mat-radio-button class="radioButton" *ngFor="let option of options" [value]="option">
+            {{(this.testSettings.testType == 0) ? option.translation : option.word}}
+        </mat-radio-button>
+    </mat-radio-group>
+    <button mat-flat-button
+            color="primary"
+            [disabled]="!givenAnswer"
+            (click)="nextQuestion()">Next question</button>
+</div>
+
+<div id="test-reslt" [hidden]="true">
+    <h1>Test Results</h1>
+    <p>Tested person: {{this.testSettings.testedPersonName}}</p>
+    <p>Test type: {{TestTypesToLabelMapping[this.testSettings.testType]}}</p>
+    <p>Total questions in test: {{this.testSettings.totalQuestionsNumber}}</p>
+    <p>Wrong answered questions: {{this.testSettings.wrongAnsweredQuestions}}</p>
+    <p>Wrong answers given: {{this.testSettings.wrongAnswersNumber}}</p>
+    <h2>Your result has been saved</h2>
+</div>
