@@ -56,12 +56,14 @@
             (click)="nextQuestion()">Next question</button>
 </div>
 
-<div id="test-reslt" [hidden]="true">
+<div class="main-container" id="test-reslt" [hidden]="true">
     <h1>Test Results</h1>
-    <p>Tested person: {{this.testSettings.testedPersonName}}</p>
-    <p>Test type: {{TestTypesToLabelMapping[this.testSettings.testType]}}</p>
-    <p>Total questions in test: {{this.testSettings.totalQuestionsNumber}}</p>
-    <p>Wrong answered questions: {{this.testSettings.wrongAnsweredQuestions}}</p>
-    <p>Wrong answers given: {{this.testSettings.wrongAnswersNumber}}</p>
+    <div class="test-results">
+        <p><b>Tested person</b>: {{this.testSettings.testedPersonName}}</p>
+        <p><b>Test type</b>: {{TestTypesToLabelMapping[this.testSettings.testType]}}</p>
+        <p><b>Total questions in test</b>: {{this.testSettings.totalQuestionsNumber}}</p>
+        <p><b>Wrong answered questions</b>: {{this.testSettings.wrongAnsweredQuestions}}</p>
+        <p><b>Wrong answers given</b>: {{this.testSettings.wrongAnswersNumber}}</p>
+    </div>
     <h2>Your result has been saved</h2>
 </div>

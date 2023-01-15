@@ -571,3 +571,4 @@ C:\Users\acer\Desktop\Stuff\Developing projects\VocabularyApp\VocabularyAPI\obj\
 C:\Users\acer\Desktop\Stuff\Developing projects\VocabularyApp\VocabularyAPI\obj\Debug\net6.0\VocabularyAPI.genruntimeconfig.cache
 C:\Users\acer\Desktop\Stuff\Developing projects\VocabularyApp\VocabularyAPI\obj\Debug\net6.0\ref\VocabularyAPI.dll
 C:\Users\acer\Desktop\Stuff\Developing projects\VocabularyApp\VocabularyAPI\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll
+C:\Users\acer\Desktop\Stuff\Developing projects\VocabularyApp\VocabularyApp\VocabularyAPI\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll

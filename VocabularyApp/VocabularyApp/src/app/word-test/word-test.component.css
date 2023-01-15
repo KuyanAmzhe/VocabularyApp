@@ -11,3 +11,18 @@ mat-form-field {
   margin-top: 10px;
   display: block;
 }
+
+.main-container {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.test-results {
+  border: solid;
+  display: inline-block;
+  border-radius: 5px;
+  width: auto;
+  padding: 10px 30px 10px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

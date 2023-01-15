@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LwDWq8tVBS9bI0BdAE8gQbvBITVRyUStKmYCMbIAmfhfycFk5GbAOBj3TNSvNVVhAod1rrKkuoDtwi5Z5PFI3g==",
+  "dgSpecHash": "qOo10PgBXirAMvVreCj9csw/BNS1AXAWMy+6cAhle3RRbQulwZEWL5G8LEBbaOSeMoRkyDJfK9B46gXHHavc8A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\acer\\Desktop\\Stuff\\Developing projects\\VocabularyApp\\VocabularyAPI\\VocabularyAPI.csproj",
+  "projectFilePath": "C:\\Users\\acer\\Desktop\\Stuff\\Developing projects\\VocabularyApp\\VocabularyApp\\VocabularyAPI\\VocabularyAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\acer\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

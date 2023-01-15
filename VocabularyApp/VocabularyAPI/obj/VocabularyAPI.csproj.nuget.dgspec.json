@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\acer\\Desktop\\Stuff\\Developing projects\\VocabularyApp\\VocabularyAPI\\VocabularyAPI.csproj": {}
+    "C:\\Users\\acer\\Desktop\\Stuff\\Developing projects\\VocabularyApp\\VocabularyApp\\VocabularyAPI\\VocabularyAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\acer\\Desktop\\Stuff\\Developing projects\\VocabularyApp\\VocabularyAPI\\VocabularyAPI.csproj": {
+    "C:\\Users\\acer\\Desktop\\Stuff\\Developing projects\\VocabularyApp\\VocabularyApp\\VocabularyAPI\\VocabularyAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acer\\Desktop\\Stuff\\Developing projects\\VocabularyApp\\VocabularyAPI\\VocabularyAPI.csproj",
+        "projectUniqueName": "C:\\Users\\acer\\Desktop\\Stuff\\Developing projects\\VocabularyApp\\VocabularyApp\\VocabularyAPI\\VocabularyAPI.csproj",
         "projectName": "VocabularyAPI",
-        "projectPath": "C:\\Users\\acer\\Desktop\\Stuff\\Developing projects\\VocabularyApp\\VocabularyAPI\\VocabularyAPI.csproj",
+        "projectPath": "C:\\Users\\acer\\Desktop\\Stuff\\Developing projects\\VocabularyApp\\VocabularyApp\\VocabularyAPI\\VocabularyAPI.csproj",
         "packagesPath": "C:\\Users\\acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acer\\Desktop\\Stuff\\Developing projects\\VocabularyApp\\VocabularyAPI\\obj\\",
+        "outputPath": "C:\\Users\\acer\\Desktop\\Stuff\\Developing projects\\VocabularyApp\\VocabularyApp\\VocabularyAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
