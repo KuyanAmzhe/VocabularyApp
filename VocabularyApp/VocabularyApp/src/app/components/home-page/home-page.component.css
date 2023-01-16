@@ -1,5 +1,5 @@
 #head {
-    background-image: url("../../assets/library.jpg");
+    background-image: url("../../../assets/library.jpg");
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -56,18 +56,6 @@
     border-radius: 30px;
 }
 
-/* 
-.functions .function {
-    font-size: 16px;
-    display: inline-block;
-    width: 25%;
-    background-color: inherit;
-    padding-left: 25px;
-    padding-right: 25px;
-    box-sizing: border-box;
-    vertical-align: top;
-}
-*/
 
 .plain-text {
     text-align: left;

@@ -7,15 +7,15 @@ import { AngularMaterialModule } from './angular-material.module'
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavMenuComponent } from './nav-menu/nav-menu.component';
-import { VocabularyComponent } from './vocabulary/vocabulary.component';
-import { AddWordComponent } from './add-word/add-word.component';
+import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
+import { VocabularyComponent } from './components/vocabulary/vocabulary.component';
+import { AddWordComponent } from './components/add-word/add-word.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSelectModule } from '@angular/material/select';
-import { HomePageComponent } from './home-page/home-page.component';
-import { FooterComponent } from './footer/footer.component';
-import { TestResultsComponent } from './test-results/test-results.component';
-import { WordTestComponent } from './word-test/word-test.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { TestResultsComponent } from './components/test-results/test-results.component';
+import { WordTestComponent } from './components/word-test/word-test.component';
 import { MatRadioModule } from '@angular/material/radio'
 
 @NgModule({

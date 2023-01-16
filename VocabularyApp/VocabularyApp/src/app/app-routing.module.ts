@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AddWordComponent } from './add-word/add-word.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { TestResultsComponent } from './test-results/test-results.component';
-import { VocabularyComponent } from './vocabulary/vocabulary.component';
-import { WordTestComponent } from './word-test/word-test.component';
+import { AddWordComponent } from './components/add-word/add-word.component';
+import { HomePageComponent } from './components/home-page/home-page.component';
+import { TestResultsComponent } from './components/test-results/test-results.component';
+import { VocabularyComponent } from './components/vocabulary/vocabulary.component';
+import { WordTestComponent } from './components/word-test/word-test.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent, pathMatch: 'full' },

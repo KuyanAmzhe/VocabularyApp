@@ -8,7 +8,6 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Connection string is settled in secrets.json file
 builder.Services.AddDbContext<VocabularyDBContext>(option =>
     option.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")));
