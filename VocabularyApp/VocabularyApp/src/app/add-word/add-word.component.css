@@ -4,5 +4,10 @@ mat-form-field {
 }
 
 .new-word {
-  margin: 5px 50% 5px 10px;
+  margin: 20px 50% 5px 20px;
+}
+
+.cancel-button {
+  margin-left: 20px;
+  margin-right: 20px;
 }

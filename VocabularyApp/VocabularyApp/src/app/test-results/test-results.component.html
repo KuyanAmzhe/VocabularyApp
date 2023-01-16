@@ -1,18 +1,20 @@
-<h1>Tests Results</h1>
+<div id="head">
+  <h1>Tests Results</h1>
 
-<p *ngIf="!testsResults">Loading...</p>
-
-<mat-form-field [hidden]="!testsResults">
-  <input matInput #filter (keyup)="loadData(filter.value)"
-         placeholder="Filter by tested person name (or part of it)" />
-</mat-form-field>
-<button [hidden]="!testsResults"
-        mat-flat-button
-        color="primary"
-        [routerLink]="['/tests']"
-        id="newTestButton">
-  Take a new test
-</button>
+  <p *ngIf="!testsResults">Loading...</p>
+  
+  <mat-form-field [hidden]="!testsResults">
+    <input matInput #filter (keyup)="loadData(filter.value)"
+           placeholder="Filter by tested person name (or part of it)" />
+  </mat-form-field>
+  <button [hidden]="!testsResults"
+          mat-flat-button
+          color="primary"
+          [routerLink]="['/tests']"
+          id="newTestButton">
+    Take a new test
+  </button>
+</div>
 
 <table mat-table [dataSource]="testsResults"
        class="mat-elevation-z8"
@@ -23,32 +25,32 @@
   <!--Test Type Column-->
   <ng-container matColumnDef="testType">
     <th mat-header-cell *matHeaderCellDef mat-sort-header>Type</th>
-    <td mat-cell *matCellDef="let testResult">{{TestTypesToLabelMapping[testResult.testType]}}</td>
+    <td class="mat-column" mat-cell *matCellDef="let testResult">{{TestTypesToLabelMapping[testResult.testType]}}</td>
   </ng-container>
   <!--Test Date Column-->
   <ng-container matColumnDef="testDate">
     <th mat-header-cell *matHeaderCellDef mat-sort-header>Date</th>
-    <td mat-cell *matCellDef="let testResult">{{testResult.testDate}}</td>
+    <td class="mat-column" mat-cell *matCellDef="let testResult">{{testResult.testDate}}</td>
   </ng-container>
   <!--Tested Person Name Column-->
   <ng-container matColumnDef="testedPersonName">
     <th mat-header-cell *matHeaderCellDef mat-sort-header>Person Name</th>
-    <td mat-cell *matCellDef="let testResult">{{testResult.testedPersonName}}</td>
+    <td class="mat-column" mat-cell *matCellDef="let testResult">{{testResult.testedPersonName}}</td>
   </ng-container>
   <!--Total Questions Number Column-->
   <ng-container matColumnDef="totalQuestionsNumber">
     <th mat-header-cell *matHeaderCellDef mat-sort-header>Total Question Number</th>
-    <td mat-cell *matCellDef="let testResult">{{testResult.totalQuestionsNumber}}</td>
+    <td class="mat-column-number" mat-cell *matCellDef="let testResult">{{testResult.totalQuestionsNumber}}</td>
   </ng-container>
   <!--Wrong Answers Number Column-->
   <ng-container matColumnDef="wrongAnswersNumber">
     <th mat-header-cell *matHeaderCellDef mat-sort-header>Total Wrong Answers</th>
-    <td mat-cell *matCellDef="let testResult">{{testResult.wrongAnswersNumber}}</td>
+    <td class="mat-column-number" mat-cell *matCellDef="let testResult">{{testResult.wrongAnswersNumber}}</td>
   </ng-container>
   <!--Wrong Answered Questions Column-->
   <ng-container matColumnDef="wrongAnsweredQuestions">
     <th mat-header-cell *matHeaderCellDef mat-sort-header>Wrong Answered Questions</th>
-    <td mat-cell *matCellDef="let testResult">{{testResult.wrongAnsweredQuestions}}</td>
+    <td class="mat-column-questions" mat-cell *matCellDef="let testResult">{{testResult.wrongAnsweredQuestions}}</td>
   </ng-container>
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>

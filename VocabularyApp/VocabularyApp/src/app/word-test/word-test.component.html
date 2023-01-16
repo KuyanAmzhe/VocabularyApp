@@ -1,4 +1,4 @@
-<div *ngIf="!hideSettings" class="new-word">
+<div *ngIf="!hideSettings" class="container">
     <h1>New test's settings</h1>
     <form [formGroup]="form" (ngSubmit)="onSumbit()">
         <!-- Tested Person Field -->
@@ -42,7 +42,7 @@
     </form>
 </div>
 
-<div id="test" *ngIf="hideSettings">
+<div class="container" id="test" *ngIf="hideSettings">
     <h2>Question {{this.currentQuestionId}} of {{this.testSettings.totalQuestionsNumber}}</h2>
     <h1>{{(this.testSettings.testType == 0) ? this.engQuestion : this.rusQuestion}}</h1>
     <mat-radio-group [(ngModel)]="givenAnswer">
@@ -56,7 +56,7 @@
             (click)="nextQuestion()">Next question</button>
 </div>
 
-<div class="main-container" id="test-reslt" [hidden]="true">
+<div class="container" id="test-reslt" [hidden]="true">
     <h1>Test Results</h1>
     <div class="test-results">
         <p><b>Tested person</b>: {{this.testSettings.testedPersonName}}</p>

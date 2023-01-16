@@ -39,7 +39,7 @@
       </mat-error>
     </mat-form-field>
     <!--Submit button-->
-    <button mat-flat-button color="primary"
+    <button [disabled]="this.form.invalid" mat-flat-button color="primary"
             type="submit">
       {{this.id ? "Save" : "Create"}}
     </button>
@@ -48,7 +48,7 @@
       Delete word
     </button>
     <!--Cancel button-->
-    <button mat-flat-button color="secondary"
+    <button class="cancel-button" mat-flat-button color="secondary"
             [routerLink]="['/vocabulary']">
       Cancel
     </button>

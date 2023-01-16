@@ -1,3 +1,20 @@
 #newTestButton {
     margin-left: 20px;
 }
+
+.mat-column {
+    width: 15%;
+  }
+
+  .mat-column-questions {
+    width: 30%;
+  }
+
+  .mat-column-number {
+    width: 5%;
+  }
+
+  #head {
+    margin-top: 20px;
+    margin-left: 20px;
+  }

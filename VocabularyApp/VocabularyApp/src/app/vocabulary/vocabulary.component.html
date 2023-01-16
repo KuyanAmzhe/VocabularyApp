@@ -1,11 +1,14 @@
-<h1>Words</h1>
+<div id="head">
+  <h1>Words</h1>
 
-<p *ngIf="!words"><em>Loading...</em></p>
+  <p *ngIf="!words"><em>Loading...</em></p>
+  
+  <mat-form-field [hidden]="!words">
+    <input matInput #filter (keyup)="loadData(filter.value)"
+           placeholder="Filter by word (or part of it)"/>
+  </mat-form-field>
 
-<mat-form-field [hidden]="!words">
-  <input matInput #filter (keyup)="loadData(filter.value)"
-         placeholder="Filter by word (or part of it)"/>
-</mat-form-field>
+</div>
 
 <table mat-table [dataSource]="words"
        class="mat-elevation-z8"

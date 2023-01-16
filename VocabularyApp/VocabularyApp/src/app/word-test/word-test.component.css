@@ -3,18 +3,13 @@ mat-form-field {
     margin: 10px 0;
   }
 
-.new-word {
-    margin: 5px 50% 5px 10px;
+.container {
+    margin: 20px 50% 5px 20px;
 }
 
 .radioButton {
   margin-top: 10px;
   display: block;
-}
-
-.main-container {
-  padding-left: 20px;
-  padding-top: 20px;
 }
 
 .test-results {
